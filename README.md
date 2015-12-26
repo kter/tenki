@@ -14,6 +14,7 @@ has, etc!
 
 ### Install
 
+~~~bash
 sudo yum -y install nodejs npm redis --enablerepo=epel
 sudo npm install -g yo generator-hubot
 sudo npm install -g npm
@@ -31,8 +32,11 @@ npm install  hubot-maps --save
 npm install  hubot-redis-brain --save
 npm install  hubot-rules --save
 npm install  hubot-shipit --save
+~~~
 
 set env
+
+~~~
 export HUBOT_RAINFALL_ALERT_YAHOO_APP_ID=
 export HUBOT_RAINFALL_ALERT_GOOGLE_API_KEY=
 export HUBOT_RAINFALL_ALERT_CHANNEL="general"
@@ -45,9 +49,10 @@ export HUBOT_RAINFALL_ALERT_LON_FOR_MAP=""
 export HUBOT_RAINFALL_ALERT_IMAGE_WIDTH="500"
 export HUBOT_RAINFALL_ALERT_IMAGE_HEIGHT="500"
 export HUBOT_SLACK_TOKEN=
+~~~
 
 Just run:
-bin/hubot --adapter slack &
+~~~bin/hubot --adapter slack &~~~
 
 ### Running tenki Locally
 
